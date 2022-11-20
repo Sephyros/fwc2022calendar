@@ -89,11 +89,6 @@ header {
   justify-content: space-between;
 }
 
-/* .card ul li + li {
-  padding-top: 24px;
-  border-top: 1px solid #323238;
-} */
-
 .card h2:hover,
 .card ul li strong:hover,
 .card ul li img:hover {
@@ -109,6 +104,7 @@ header {
 hr {
   border-top: 1px solid #bbb;
   border-radius: 16px;
+  border-color: #323238;
 }
 
 .card {

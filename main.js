@@ -842,7 +842,7 @@ function createGame(game) {
   }
   const gameList = document.querySelector(`#gamesOf${month}${day}`)
   gameList.innerHTML += `
-  ${firstGameOnCard || '<hr>'}
+  ${firstGameOnCard ? '' : '<hr>'}
 <li class="gameCard">
    <div class="gameCardContent">
       <div class="firstTeam">
