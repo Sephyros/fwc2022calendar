@@ -18,7 +18,7 @@ Uma página de calendário da copa do mundo 2022 desenvolvido com suporte da @ro
 <br>
 
 <p align="center">
-  <img alt="Imagem de pré-visualização do calendário da copa" src=".github/preview.jpg" width="100%">
+  <img alt="Imagem de pré-visualização do calendário da copa" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
