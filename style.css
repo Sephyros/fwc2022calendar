@@ -5,24 +5,14 @@
 }
 
 :root {
-  --card-title-border-color: #746615;
-  --card-color-primary: #f7dd43;
-  --card-bg-color: #1d1c19;
-  --bg: url(./assets/bg-yellow.svg);
-}
-
-body.blue {
-  --card-title-border-color: #338af3;
-  --card-color-primary: #338af3;
-  --card-bg-color: #202024;
-  --bg: url(./assets/bg-blue.svg);
-}
-
-body.green {
-  --card-title-border-color: #047c3f;
-  --card-color-primary: #047c3f;
-  --card-bg-color: #1a1f1b;
-  --bg: url(./assets/bg-green.svg);
+  --card-title-border-color: #4a1f63;
+  --card-color-primary: #be8cff;
+  --card-bg-color: #221a25;
+  --card-color-info: #c2c2cc;
+  --card-color-winner: #6da544;
+  --card-color-loser: #ad1519;
+  --card-color-draw: #338af3;
+  --bg: url(./assets/bg-purple.svg);
 }
 
 ul {
@@ -30,7 +20,7 @@ ul {
 }
 
 body {
-  background: #121214 var(--bg) no-repeat top center/cover;
+  background: var(--card-bg-color) var(--bg) no-repeat center top/contain;
 }
 
 body * {
@@ -52,6 +42,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  justify-content: center;
 }
 
 .card {
@@ -77,11 +68,11 @@ header {
   margin-inline: auto;
   margin-bottom: 53px;
 
-  color: #f7dd43;
+  color: var(--card-color-primary);
 }
 
 .card h2 span {
-  color: #e1e1e6;
+  color: var(--card-color-info);
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -90,8 +81,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
-  width: 270px;
 }
 
 .card ul li {
@@ -100,18 +89,10 @@ header {
   justify-content: space-between;
 }
 
-.card ul li + li {
+/* .card ul li + li {
   padding-top: 24px;
   border-top: 1px solid #323238;
-}
-
-.card ul li strong {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 125%;
-
-  color: #e1e1e6;
-}
+} */
 
 .card h2:hover,
 .card ul li strong:hover,
@@ -123,6 +104,11 @@ header {
 .card ul li strong,
 .card ul li img {
   transition: transform 0.3s;
+}
+
+hr {
+  border-top: 1px solid #bbb;
+  border-radius: 16px;
 }
 
 .card {
@@ -143,8 +129,274 @@ header {
 
 @media (min-width: 700px) {
   #cards {
-    max-width: 670px;
+    max-width: 1668px;
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+.gameCard {
+  width: 335px;
+  height: 80px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+div.gameCardContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+div.gameCardBackground {
+  position: absolute;
+  width: 335px;
+  height: 80px;
+  mix-blend-mode: normal;
+  filter: blur(0.875px);
+  border-radius: 6px;
+  z-index: -100;
+  background-blend-mode: normal;
+}
+
+img.stadium {
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 100) 50%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 100) 50%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  width: 335px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  mix-blend-mode: normal;
+  opacity: 0.48;
+  isolation: isolate;
+}
+
+div.team {
+  display: flex;
+}
+
+div.firstTeam {
+  display: flex;
+  order: 1;
+  z-index: 1;
+}
+
+div.secondTeam {
+  display: flex;
+  order: 3;
+  z-index: 3;
+}
+
+div.teamFlag {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex: none;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+.leftFlag {
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.rightFlag {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.firstTeamFlagMask {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(
+    90deg,
+    var(--card-color-info) 35%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: blur(1px);
+  border-radius: 0px;
+}
+
+div.pointsFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 31.67px;
+  height: 80px;
+  z-index: 2;
+}
+
+strong.teamPoints {
+  width: 14px;
+  height: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 125%;
+  color: var(--card-color-info);
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+div.matchInfoFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0px;
+  gap: 4px;
+  width: 111.67px;
+  height: 80px;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 1;
+  z-index: 2;
+}
+div.matchHourFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 111.67px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+strong.matchHour {
+  width: 84px;
+  height: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 75%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--card-color-info);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+div.stadiumFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 111.67px;
+  height: 16px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+strong.stadiumName {
+  width: 111px;
+  height: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.58em;
+  line-height: 105%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  justify-content: center;
+  color: var(--card-color-info);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.75);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+div.teamFlag:hover > strong.teamName {
+  opacity: 100%;
+}
+
+.teamName {
+  opacity: 0%;
+  position: absolute;
+  width: 80px;
+  left: calc(50% - 80px / 2);
+  bottom: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--card-color-info);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.85);
+}
+
+.teamNameLeft {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.teamNameRight {
+  background: linear-gradient(
+    315deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
