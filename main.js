@@ -801,6 +801,15 @@ const weekDays = [
   "Sábado",
 ]
 
+function getTeamMatchResultClass(game, team) {
+  const { firstTeam, firstTeamScore, secondTeamScore } = game
+  if (firstTeamScore === secondTeamScore) { return ' tie' }
+  if (team === firstTeam) {
+    return firstTeamScore > secondTeamScore ? ' winner' : ' loser'
+  }
+  return secondTeamScore > firstTeamScore ? ' winner' : ' loser'
+}
+
 let delay = -0.1
 function createCard(game) {
   const { gameDate } = game
@@ -828,7 +837,6 @@ function createGame(game) {
     gameDate,
     firstTeamScore,
     secondTeamScore,
-    type,
     gameStadium,
   } = game
   const matchTimeRegex = /(\d{4})-(\d{2})-(\d{2})T(\d{2}:\d{2}):\d{2}\.\d{2}Z/
@@ -854,17 +862,14 @@ function createGame(game) {
       <div class="firstTeam">
          <div class="teamFlag">
             <div class="test">
-               <img src="./assets/flags/${firstTeam.ISO3166A2.toLowerCase()}.svg" alt="Bandeira do ${
-    firstTeam.teamName
-  }" class="leftFlag"/>
+               <img src="./assets/flags/${firstTeam.ISO3166A2.toLowerCase()}.svg" alt="Bandeira do ${firstTeam.teamName
+    }" class="leftFlag"/>
             </div>
             <strong class="teamName teamNameLeft">${firstTeam.teamName}</strong>
             <firstTeamFlagMask/>
          </div>
          <div class="pointsFrame">
-            <strong class="teamPoints" style="${
-              firstTeamWon ? "color:#11B511;" : "color:#B00000;"
-            }${draw ? "color:yellow" : ""}">${firstTeamScore ?? ""}</strong>
+            <strong class="teamPoints${getTeamMatchResultClass(game, firstTeam)}">${firstTeamScore ?? ""}</strong>
          </div>
       </div>
       <div class="matchInfoFrame">
@@ -877,19 +882,15 @@ function createGame(game) {
       </div>
       <div class="secondTeam">
           <div class="pointsFrame">
-            <strong class="teamPoints" style="${
-              secondTeamWon ? "color:#11B511;" : "color:#B00000;"
-            }${draw ? "color:yellow" : ""}">${secondTeamScore ?? ""}</strong>
+            <strong class="teamPoints${getTeamMatchResultClass(game, secondTeam)}">${secondTeamScore ?? ""}</strong>
          </div>
          <div class="teamFlag">
             <div>
-              <img src="./assets/flags/${secondTeam.ISO3166A2.toLowerCase()}.svg" alt="Bandeira do ${
-    secondTeam.teamName
-  }" class="rightFlag"/>
+              <img src="./assets/flags/${secondTeam.ISO3166A2.toLowerCase()}.svg" alt="Bandeira do ${secondTeam.teamName
+    }" class="rightFlag"/>
             </div>
-            <strong class="teamName teamNameRight">${
-              secondTeam.teamName
-            }</strong>
+            <strong class="teamName teamNameRight">${secondTeam.teamName
+    }</strong>
             <StadiumMask/>
          </div>
          
@@ -897,9 +898,9 @@ function createGame(game) {
    </div>
    <div class="gameCardBackground">
       <img src="./assets/stadiums/${gameStadium.replace(
-        /\s/gi,
-        "-"
-      )}.png" alt="${gameStadium}" class="stadium" />
+      /\s/gi,
+      "-"
+    )}.png" alt="${gameStadium}" class="stadium" />
    </div>
 </li>
 `

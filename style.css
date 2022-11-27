@@ -11,7 +11,6 @@
   --card-color-info: #c2c2cc;
   --card-color-winner: #6da544;
   --card-color-loser: #ad1519;
-  --card-color-draw: #338af3;
   --bg: url(./assets/bg-purple.svg);
 }
 
@@ -275,11 +274,22 @@ strong.teamPoints {
   font-weight: 900;
   font-size: 24px;
   line-height: 125%;
-  color: var(--card-color-info);
   text-align: center;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.winner {
+  color: var(--card-color-winner);
+}
+
+.tie {
+  color: var(--card-color-info);
+}
+
+.loser {
+  color: var(--card-color-loser);
 }
 
 div.matchInfoFrame {
