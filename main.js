@@ -221,6 +221,7 @@ const games = [
     gameDate: "2022-11-20T19:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Bayt Stadium",
+    gameNumber: 1
   },
   {
     firstTeam: teams.ENG,
@@ -230,6 +231,7 @@ const games = [
     gameDate: "2022-11-21T16:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Khalifa International Stadium",
+    gameNumber: 3
   },
   {
     firstTeam: teams.SEN,
@@ -239,6 +241,7 @@ const games = [
     gameDate: "2022-11-21T19:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Thumama Stadium",
+    gameNumber: 2
   },
   {
     firstTeam: teams.USA,
@@ -248,6 +251,7 @@ const games = [
     gameDate: "2022-11-21T22:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Ahmad Bin Ali Stadium",
+    gameNumber: 4
   },
   {
     firstTeam: teams.ARG,
@@ -257,15 +261,7 @@ const games = [
     gameDate: "2022-11-22T13:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Lusail Stadium",
-  },
-  {
-    firstTeam: teams.MEX,
-    firstTeamScore: 0,
-    secondTeam: teams.POL,
-    secondTeamScore: 0,
-    gameDate: "2022-11-22T19:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Stadium 974",
+    gameNumber: 8
   },
   {
     firstTeam: teams.DNK,
@@ -275,6 +271,17 @@ const games = [
     gameDate: "2022-11-22T16:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Education City Stadium",
+    gameNumber: 6
+  },
+  {
+    firstTeam: teams.MEX,
+    firstTeamScore: 0,
+    secondTeam: teams.POL,
+    secondTeamScore: 0,
+    gameDate: "2022-11-22T19:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Stadium 974",
+    gameNumber: 7
   },
   {
     firstTeam: teams.FRA,
@@ -284,6 +291,7 @@ const games = [
     gameDate: "2022-11-22T22:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Janoub Stadium",
+    gameNumber: 5
   },
   {
     firstTeam: teams.MAR,
@@ -293,6 +301,7 @@ const games = [
     gameDate: "2022-11-23T13:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Bayt Stadium",
+    gameNumber: 12
   },
   {
     firstTeam: teams.DEU,
@@ -302,6 +311,7 @@ const games = [
     gameDate: "2022-11-23T16:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Khalifa International Stadium",
+    gameNumber: 11
   },
   {
     firstTeam: teams.ESP,
@@ -311,6 +321,7 @@ const games = [
     gameDate: "2022-11-23T19:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Thumama Stadium",
+    gameNumber: 10
   },
   {
     firstTeam: teams.BEL,
@@ -320,33 +331,7 @@ const games = [
     gameDate: "2022-11-23T22:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Ahmad Bin Ali Stadium",
-  },
-  {
-    firstTeam: teams.BRA,
-    firstTeamScore: 2,
-    secondTeam: teams.SRB,
-    secondTeamScore: 0,
-    gameDate: "2022-11-24T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Lusail Stadium",
-  },
-  {
-    firstTeam: teams.PRT,
-    firstTeamScore: 3,
-    secondTeam: teams.GHA,
-    secondTeamScore: 2,
-    gameDate: "2022-11-24T19:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Stadium 974",
-  },
-  {
-    firstTeam: teams.URY,
-    firstTeamScore: 0,
-    secondTeam: teams.KOR,
-    secondTeamScore: 0,
-    gameDate: "2022-11-24T16:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Education City Stadium",
+    gameNumber: 9
   },
   {
     firstTeam: teams.CHE,
@@ -356,33 +341,37 @@ const games = [
     gameDate: "2022-11-24T13:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Janoub Stadium",
+    gameNumber: 13
   },
   {
-    firstTeam: teams.ENG,
+    firstTeam: teams.URY,
     firstTeamScore: 0,
-    secondTeam: teams.USA,
+    secondTeam: teams.KOR,
     secondTeamScore: 0,
-    gameDate: "2022-11-25T22:00:00.00Z",
+    gameDate: "2022-11-24T16:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Al Bayt Stadium",
+    gameStadium: "Education City Stadium",
+    gameNumber: 14
   },
   {
-    firstTeam: teams.NLD,
-    firstTeamScore: 1,
-    secondTeam: teams.ECU,
-    secondTeamScore: 1,
-    gameDate: "2022-11-25T19:00:00.00Z",
+    firstTeam: teams.PRT,
+    firstTeamScore: 3,
+    secondTeam: teams.GHA,
+    secondTeamScore: 2,
+    gameDate: "2022-11-24T19:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Khalifa International Stadium",
+    gameStadium: "Stadium 974",
+    gameNumber: 15
   },
   {
-    firstTeam: teams.QAT,
-    firstTeamScore: 0,
-    secondTeam: teams.SEN,
-    secondTeamScore: 3,
-    gameDate: "2022-11-25T16:00:00.00Z",
+    firstTeam: teams.BRA,
+    firstTeamScore: 2,
+    secondTeam: teams.SRB,
+    secondTeamScore: 0,
+    gameDate: "2022-11-24T22:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Al Thumama Stadium",
+    gameStadium: "Lusail Stadium",
+    gameNumber: 16
   },
   {
     firstTeam: teams.WLS,
@@ -392,33 +381,37 @@ const games = [
     gameDate: "2022-11-25T13:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Ahmad Bin Ali Stadium",
+    gameNumber: 17
   },
   {
-    firstTeam: teams.ARG,
-    firstTeamScore: 2,
-    secondTeam: teams.MEX,
-    secondTeamScore: 0,
-    gameDate: "2022-11-26T22:00:00.00Z",
+    firstTeam: teams.QAT,
+    firstTeamScore: 0,
+    secondTeam: teams.SEN,
+    secondTeamScore: 3,
+    gameDate: "2022-11-25T16:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Lusail Stadium",
+    gameStadium: "Al Thumama Stadium",
+    gameNumber: 18
   },
   {
-    firstTeam: teams.FRA,
-    firstTeamScore: 2,
-    secondTeam: teams.DNK,
+    firstTeam: teams.NLD,
+    firstTeamScore: 1,
+    secondTeam: teams.ECU,
     secondTeamScore: 1,
-    gameDate: "2022-11-26T19:00:00.00Z",
+    gameDate: "2022-11-25T19:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Stadium 974",
+    gameStadium: "Khalifa International Stadium",
+    gameNumber: 19
   },
   {
-    firstTeam: teams.POL,
-    firstTeamScore: 2,
-    secondTeam: teams.SAU,
+    firstTeam: teams.ENG,
+    firstTeamScore: 0,
+    secondTeam: teams.USA,
     secondTeamScore: 0,
-    gameDate: "2022-11-26T16:00:00.00Z",
+    gameDate: "2022-11-25T22:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Education City Stadium",
+    gameStadium: "Al Bayt Stadium",
+    gameNumber: 20
   },
   {
     firstTeam: teams.TUN,
@@ -428,33 +421,37 @@ const games = [
     gameDate: "2022-11-26T13:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Janoub Stadium",
+    gameNumber: 21
   },
   {
-    firstTeam: teams.ESP,
-    firstTeamScore: 1,
-    secondTeam: teams.DEU,
+    firstTeam: teams.POL,
+    firstTeamScore: 2,
+    secondTeam: teams.SAU,
+    secondTeamScore: 0,
+    gameDate: "2022-11-26T16:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Education City Stadium",
+    gameNumber: 22
+  },
+  {
+    firstTeam: teams.FRA,
+    firstTeamScore: 2,
+    secondTeam: teams.DNK,
     secondTeamScore: 1,
-    gameDate: "2022-11-27T22:00:00.00Z",
+    gameDate: "2022-11-26T19:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Al Bayt Stadium",
+    gameStadium: "Stadium 974",
+    gameNumber: 23
   },
   {
-    firstTeam: teams.HRV,
-    firstTeamScore: 4,
-    secondTeam: teams.CAN,
-    secondTeamScore: 1,
-    gameDate: "2022-11-27T19:00:00.00Z",
+    firstTeam: teams.ARG,
+    firstTeamScore: 2,
+    secondTeam: teams.MEX,
+    secondTeamScore: 0,
+    gameDate: "2022-11-26T22:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Khalifa International Stadium",
-  },
-  {
-    firstTeam: teams.BEL,
-    firstTeamScore: 0,
-    secondTeam: teams.MAR,
-    secondTeamScore: 2,
-    gameDate: "2022-11-27T16:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Al Thumama Stadium",
+    gameStadium: "Lusail Stadium",
+    gameNumber: 24
   },
   {
     firstTeam: teams.JPN,
@@ -464,276 +461,327 @@ const games = [
     gameDate: "2022-11-27T13:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Ahmad Bin Ali Stadium",
+    gameNumber: 25
   },
   {
-    firstTeam: teams.PRT,
-    firstTeamScore: null,
-    secondTeam: teams.URY,
-    secondTeamScore: null,
-    gameDate: "2022-11-28T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Lusail Stadium",
-  },
-  {
-    firstTeam: teams.BRA,
-    firstTeamScore: null,
-    secondTeam: teams.CHE,
-    secondTeamScore: null,
-    gameDate: "2022-11-28T19:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Stadium 974",
-  },
-  {
-    firstTeam: teams.KOR,
-    firstTeamScore: null,
-    secondTeam: teams.GHA,
-    secondTeamScore: null,
-    gameDate: "2022-11-28T16:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Education City Stadium",
-  },
-  {
-    firstTeam: teams.CMR,
-    firstTeamScore: null,
-    secondTeam: teams.SRB,
-    secondTeamScore: null,
-    gameDate: "2022-11-28T13:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Al Janoub Stadium",
-  },
-  {
-    firstTeam: teams.NLD,
-    firstTeamScore: null,
-    secondTeam: teams.QAT,
-    secondTeamScore: null,
-    gameDate: "2022-11-29T18:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Al Bayt Stadium",
-  },
-  {
-    firstTeam: teams.ECU,
-    firstTeamScore: null,
-    secondTeam: teams.SEN,
-    secondTeamScore: null,
-    gameDate: "2022-11-29T18:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Khalifa International Stadium",
-  },
-  {
-    firstTeam: teams.IRN,
-    firstTeamScore: null,
-    secondTeam: teams.USA,
-    secondTeamScore: null,
-    gameDate: "2022-11-29T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Al Thumama Stadium",
-  },
-  {
-    firstTeam: teams.WLS,
-    firstTeamScore: null,
-    secondTeam: teams.ENG,
-    secondTeamScore: null,
-    gameDate: "2022-11-29T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Ahmad Bin Ali Stadium",
-  },
-  {
-    firstTeam: teams.SAU,
-    firstTeamScore: null,
-    secondTeam: teams.MEX,
-    secondTeamScore: null,
-    gameDate: "2022-11-30T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Lusail Stadium",
-  },
-  {
-    firstTeam: teams.POL,
-    firstTeamScore: null,
-    secondTeam: teams.ARG,
-    secondTeamScore: null,
-    gameDate: "2022-11-30T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Stadium 974",
-  },
-  {
-    firstTeam: teams.TUN,
-    firstTeamScore: null,
-    secondTeam: teams.FRA,
-    secondTeamScore: null,
-    gameDate: "2022-11-30T18:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Education City Stadium",
-  },
-  {
-    firstTeam: teams.AUS,
-    firstTeamScore: null,
-    secondTeam: teams.DNK,
-    secondTeamScore: null,
-    gameDate: "2022-11-30T18:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Al Janoub Stadium",
-  },
-  {
-    firstTeam: teams.CRI,
-    firstTeamScore: null,
-    secondTeam: teams.DEU,
-    secondTeamScore: null,
-    gameDate: "2022-12-01T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Al Bayt Stadium",
-  },
-  {
-    firstTeam: teams.JPN,
-    firstTeamScore: null,
-    secondTeam: teams.ESP,
-    secondTeamScore: null,
-    gameDate: "2022-12-01T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Khalifa International Stadium",
-  },
-  {
-    firstTeam: teams.CAN,
-    firstTeamScore: null,
+    firstTeam: teams.BEL,
+    firstTeamScore: 0,
     secondTeam: teams.MAR,
-    secondTeamScore: null,
-    gameDate: "2022-12-01T18:00:00.00Z",
+    secondTeamScore: 2,
+    gameDate: "2022-11-27T16:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Thumama Stadium",
+    gameNumber: 26
   },
   {
     firstTeam: teams.HRV,
-    firstTeamScore: null,
-    secondTeam: teams.BEL,
-    secondTeamScore: null,
-    gameDate: "2022-12-01T18:00:00.00Z",
+    firstTeamScore: 4,
+    secondTeam: teams.CAN,
+    secondTeamScore: 1,
+    gameDate: "2022-11-27T19:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Ahmad Bin Ali Stadium",
+    gameStadium: "Khalifa International Stadium",
+    gameNumber: 27
+  },
+  {
+    firstTeam: teams.ESP,
+    firstTeamScore: 1,
+    secondTeam: teams.DEU,
+    secondTeamScore: 1,
+    gameDate: "2022-11-27T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Al Bayt Stadium",
+    gameNumber: 28
   },
   {
     firstTeam: teams.CMR,
-    firstTeamScore: null,
-    secondTeam: teams.BRA,
-    secondTeamScore: null,
-    gameDate: "2022-12-02T22:00:00.00Z",
+    firstTeamScore: 3,
+    secondTeam: teams.SRB,
+    secondTeamScore: 3,
+    gameDate: "2022-11-28T13:00:00.00Z",
     type: cupStages[0],
-    gameStadium: "Lusail Stadium",
-  },
-  {
-    firstTeam: teams.SRB,
-    firstTeamScore: null,
-    secondTeam: teams.CHE,
-    secondTeamScore: null,
-    gameDate: "2022-12-02T22:00:00.00Z",
-    type: cupStages[0],
-    gameStadium: "Stadium 974",
+    gameStadium: "Al Janoub Stadium",
+    gameNumber: 29
   },
   {
     firstTeam: teams.KOR,
-    firstTeamScore: null,
-    secondTeam: teams.PRT,
-    secondTeamScore: null,
-    gameDate: "2022-12-02T18:00:00.00Z",
+    firstTeamScore: 2,
+    secondTeam: teams.GHA,
+    secondTeamScore: 3,
+    gameDate: "2022-11-28T16:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Education City Stadium",
+    gameNumber: 30
+  },
+  {
+    firstTeam: teams.BRA,
+    firstTeamScore: 1,
+    secondTeam: teams.CHE,
+    secondTeamScore: 0,
+    gameDate: "2022-11-28T19:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Stadium 974",
+    gameNumber: 31
+  },
+  {
+    firstTeam: teams.PRT,
+    firstTeamScore: 2,
+    secondTeam: teams.URY,
+    secondTeamScore: 0,
+    gameDate: "2022-11-28T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Lusail Stadium",
+    gameNumber: 32
+  },
+  {
+    firstTeam: teams.ECU,
+    firstTeamScore: 1,
+    secondTeam: teams.SEN,
+    secondTeamScore: 2,
+    gameDate: "2022-11-29T18:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Khalifa International Stadium",
+    gameNumber: 35
+  },
+  {
+    firstTeam: teams.NLD,
+    firstTeamScore: 2,
+    secondTeam: teams.QAT,
+    secondTeamScore: 0,
+    gameDate: "2022-11-29T18:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Al Bayt Stadium",
+    gameNumber: 36
+  },
+  {
+    firstTeam: teams.IRN,
+    firstTeamScore: 0,
+    secondTeam: teams.USA,
+    secondTeamScore: 1,
+    gameDate: "2022-11-29T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Al Thumama Stadium",
+    gameNumber: 34
+  },
+  {
+    firstTeam: teams.WLS,
+    firstTeamScore: 0,
+    secondTeam: teams.ENG,
+    secondTeamScore: 1,
+    gameDate: "2022-11-29T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Ahmad Bin Ali Stadium",
+    gameNumber: 33
+  },
+  {
+    firstTeam: teams.AUS,
+    firstTeamScore: 1,
+    secondTeam: teams.DNK,
+    secondTeamScore: 0,
+    gameDate: "2022-11-30T18:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Al Janoub Stadium",
+    gameNumber: 37
+  },
+  {
+    firstTeam: teams.TUN,
+    firstTeamScore: 1,
+    secondTeam: teams.FRA,
+    secondTeamScore: 0,
+    gameDate: "2022-11-30T18:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Education City Stadium",
+    gameNumber: 38
+  },
+  {
+    firstTeam: teams.POL,
+    firstTeamScore: 0,
+    secondTeam: teams.ARG,
+    secondTeamScore: 2,
+    gameDate: "2022-11-30T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Stadium 974",
+    gameNumber: 39
+  },
+  {
+    firstTeam: teams.SAU,
+    firstTeamScore: 1,
+    secondTeam: teams.MEX,
+    secondTeamScore: 2,
+    gameDate: "2022-11-30T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Lusail Stadium",
+    gameNumber: 40
+  },
+  {
+    firstTeam: teams.CAN,
+    firstTeamScore: 1,
+    secondTeam: teams.MAR,
+    secondTeamScore: 2,
+    gameDate: "2022-12-01T18:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Al Thumama Stadium",
+    gameNumber: 42
+  },
+  {
+    firstTeam: teams.HRV,
+    firstTeamScore: 0,
+    secondTeam: teams.BEL,
+    secondTeamScore: 0,
+    gameDate: "2022-12-01T18:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Ahmad Bin Ali Stadium",
+    gameNumber: 41
+  },
+  {
+    firstTeam: teams.CRI,
+    firstTeamScore: 2,
+    secondTeam: teams.DEU,
+    secondTeamScore: 4,
+    gameDate: "2022-12-01T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Al Bayt Stadium",
+    gameNumber: 44
+  },
+  {
+    firstTeam: teams.JPN,
+    firstTeamScore: 2,
+    secondTeam: teams.ESP,
+    secondTeamScore: 1,
+    gameDate: "2022-12-01T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Khalifa International Stadium",
+    gameNumber: 43
   },
   {
     firstTeam: teams.GHA,
-    firstTeamScore: null,
+    firstTeamScore: 0,
     secondTeam: teams.URY,
-    secondTeamScore: null,
+    secondTeamScore: 2,
     gameDate: "2022-12-02T18:00:00.00Z",
     type: cupStages[0],
     gameStadium: "Al Janoub Stadium",
+    gameNumber: 45
+  },
+  {
+    firstTeam: teams.KOR,
+    firstTeamScore: 2,
+    secondTeam: teams.PRT,
+    secondTeamScore: 1,
+    gameDate: "2022-12-02T18:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Education City Stadium",
+    gameNumber: 46
+  },
+  {
+    firstTeam: teams.CMR,
+    firstTeamScore: 1,
+    secondTeam: teams.BRA,
+    secondTeamScore: 0,
+    gameDate: "2022-12-02T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Lusail Stadium",
+    gameNumber: 48
+  },
+  {
+    firstTeam: teams.SRB,
+    firstTeamScore: 2,
+    secondTeam: teams.CHE,
+    secondTeamScore: 3,
+    gameDate: "2022-12-02T22:00:00.00Z",
+    type: cupStages[0],
+    gameStadium: "Stadium 974",
+    gameNumber: 47
+  },
+  {
+    firstTeam: teams.NLD, // 1A
+    firstTeamScore: 3,
+    secondTeam: teams.USA, // 2B
+    secondTeamScore: 1,
+    gameDate: '2022-12-03T18:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Khalifa International Stadium',
+    gameNumber: 49
+  },
+  {
+    firstTeam: teams.ARG, // 1C
+    firstTeamScore: 2,
+    secondTeam: teams.AUS, // 2D
+    secondTeamScore: 1,
+    gameDate: '2022-12-03T22:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Ahmad Bin Ali Stadium',
+    gameNumber: 50
+  },
+  {
+    firstTeam: teams.FRA, // 1D
+    firstTeamScore: null,
+    secondTeam: teams.POL, // 2C
+    secondTeamScore: null,
+    gameDate: '2022-12-04T18:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Al Thumama Stadium',
+    gameNumber: 52
+  },
+  {
+    firstTeam: teams.ENG, // 1B
+    firstTeamScore: null,
+    secondTeam: teams.SEN, // 2A
+    secondTeamScore: null,
+    gameDate: '2022-12-04T22:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Al Bayt Stadium',
+    gameNumber: 51
+  },
+  {
+    firstTeam: teams.JPN, // 1E
+    firstTeamScore: null,
+    secondTeam: teams.HRV, // 2F
+    secondTeamScore: null,
+    gameDate: '2022-12-05T18:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Al Janoub Stadium',
+    gameNumber: 53
+  },
+  {
+    firstTeam: teams.BRA, // 1G
+    firstTeamScore: null,
+    secondTeam: teams.KOR, // 2H
+    secondTeamScore: null,
+    gameDate: '2022-12-05T22:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Stadium 974',
+    gameNumber: 54
+  },
+  {
+    firstTeam: teams.MAR, // 1F
+    firstTeamScore: null,
+    secondTeam: teams.ESP, // 2E
+    secondTeamScore: null,
+    gameDate: '2022-12-06T18:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Education City Stadium',
+    gameNumber: 55
+  },
+  {
+    firstTeam: teams.PRT, // 1H
+    firstTeamScore: null,
+    secondTeam: teams.CHE, // 2G
+    secondTeamScore: null,
+    gameDate: '2022-12-06T22:00:00.00Z',
+    type: cupStages[1],
+    gameStadium: 'Lusail Stadium',
+    gameNumber: 56
   },
   // {
-  //   firstTeam: '1A',
+  //   firstTeam: 'W53',
   //   firstTeamScore: null,
-  //   secondTeam: '2B',
+  //   secondTeam: 'W54',
   //   secondTeamScore: null,
-  //   gameDate: '2022-12-03T18:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Khalifa International Stadium'
-  // },
-  // {
-  //   firstTeam: '1C',
-  //   firstTeamScore: null,
-  //   secondTeam: '2D',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-03T22:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Ahmad Bin Ali Stadium'
-  // },
-  // {
-  //   firstTeam: '1B',
-  //   firstTeamScore: null,
-  //   secondTeam: '2A',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-04T22:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Al Bayt Stadium'
-  // },
-  // {
-  //   firstTeam: '1D',
-  //   firstTeamScore: null,
-  //   secondTeam: '2C',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-04T18:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Al Thumama Stadium'
-  // },
-  // {
-  //   firstTeam: '1H',
-  //   firstTeamScore: null,
-  //   secondTeam: '2G',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-06T22:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Lusail Stadium'
-  // },
-  // {
-  //   firstTeam: '1G',
-  //   firstTeamScore: null,
-  //   secondTeam: '2H',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-05T22:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Stadium 974'
-  // },
-  // {
-  //   firstTeam: '1F',
-  //   firstTeamScore: null,
-  //   secondTeam: '2E',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-06T18:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Education City Stadium'
-  // },
-  // {
-  //   firstTeam: '1E',
-  //   firstTeamScore: null,
-  //   secondTeam: '2F',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-05T18:00:00.00Z',
-  //   type: cupStages[1],
-  //   gameStadium: 'Al Janoub Stadium'
-  // },
-  // {
-  //   firstTeam: 'W51',
-  //   firstTeamScore: null,
-  //   secondTeam: 'W52',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-10T22:00:00.00Z',
+  //   gameDate: '2022-12-09T18:00:00.00Z',
   //   type: cupStages[2],
-  //   gameStadium: 'Al Bayt Stadium'
-  // },
-  // {
-  //   firstTeam: 'W55',
-  //   firstTeamScore: null,
-  //   secondTeam: 'W56',
-  //   secondTeamScore: null,
-  //   gameDate: '2022-12-10T18:00:00.00Z',
-  //   type: cupStages[2],
-  //   gameStadium: 'Al Thumama Stadium'
+  //   gameStadium: 'Education City Stadium',
+  //   gameNumber: 58
   // },
   // {
   //   firstTeam: 'W49',
@@ -742,25 +790,28 @@ const games = [
   //   secondTeamScore: null,
   //   gameDate: '2022-12-09T22:00:00.00Z',
   //   type: cupStages[2],
-  //   gameStadium: 'Lusail Stadium'
+  //   gameStadium: 'Lusail Stadium',
+  //   gameNumber: 57
   // },
   // {
-  //   firstTeam: 'W53',
+  //   firstTeam: 'W55',
   //   firstTeamScore: null,
-  //   secondTeam: 'W54',
+  //   secondTeam: 'W56',
   //   secondTeamScore: null,
-  //   gameDate: '2022-12-09T18:00:00.00Z',
+  //   gameDate: '2022-12-10T18:00:00.00Z',
   //   type: cupStages[2],
-  //   gameStadium: 'Education City Stadium'
+  //   gameStadium: 'Al Thumama Stadium',
+  // gameNumber: 60
   // },
   // {
-  //   firstTeam: 'W59',
+  //   firstTeam: 'W51',
   //   firstTeamScore: null,
-  //   secondTeam: 'W60',
+  //   secondTeam: 'W52',
   //   secondTeamScore: null,
-  //   gameDate: '2022-12-14T22:00:00.00Z',
-  //   type: cupStages[3],
-  //   gameStadium: 'Al Bayt Stadium'
+  //   gameDate: '2022-12-10T22:00:00.00Z',
+  //   type: cupStages[2],
+  //   gameStadium: 'Al Bayt Stadium',
+  // gameNumber: 59
   // },
   // {
   //   firstTeam: 'W57',
@@ -769,8 +820,19 @@ const games = [
   //   secondTeamScore: null,
   //   gameDate: '2022-12-13T22:00:00.00Z',
   //   type: cupStages[3],
-  //   gameStadium: 'Lusail Stadium'
+  //   gameStadium: 'Lusail Stadium',
+  // gameNumber: 61
   // },
+  // },
+  // {
+  //   firstTeam: 'W59',
+  //   firstTeamScore: null,
+  //   secondTeam: 'W60',
+  //   secondTeamScore: null,
+  //   gameDate: '2022-12-14T22:00:00.00Z',
+  //   type: cupStages[3],
+  //   gameStadium: 'Al Bayt Stadium',
+  // gameNumber: 62
   // {
   //   firstTeam: 'L61',
   //   firstTeamScore: null,
@@ -778,7 +840,8 @@ const games = [
   //   secondTeamScore: null,
   //   gameDate: '2022-12-17T18:00:00.00Z',
   //   type: cupStages[4],
-  //   gameStadium: 'Khalifa International Stadium'
+  //   gameStadium: 'Khalifa International Stadium',
+  // gameNumber: 63
   // },
   // {
   //   firstTeam: 'W61',
@@ -787,7 +850,8 @@ const games = [
   //   secondTeamScore: null,
   //   gameDate: '2022-12-18T18:00:00.00Z',
   //   type: cupStages[4],
-  //   gameStadium: 'Lusail Stadium'
+  //   gameStadium: 'Lusail Stadium',
+  // gameNumber: 64
   // },
 ]
 
@@ -852,9 +916,6 @@ function createGame(game) {
     firstGameOnCard = true
   }
   const gameList = document.querySelector(`#gamesOf${month}${day}`)
-  const firstTeamWon = firstTeamScore > secondTeamScore
-  const secondTeamWon = secondTeamScore > firstTeamScore
-  const draw = firstTeamScore === secondTeamScore
   gameList.innerHTML += `
   ${firstGameOnCard ? "" : "<hr>"}
 <li class="gameCard">
