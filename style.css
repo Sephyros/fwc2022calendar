@@ -11,6 +11,12 @@
   --card-color-info: #c2c2cc;
   --card-color-winner: #6da544;
   --card-color-loser: #ad1519;
+  --card-color-stage-group: hsl(264, 67%, 15%);
+  --card-color-stage-ro16: hsl(274, 66%, 15%);
+  --card-color-stage-quarter: hsl(297, 64%, 15%);
+  --card-color-stage-semi: hsl(336, 69%, 15%);
+  --card-color-stage-third: hsl(242, 47%, 15%);
+  --card-color-stage-final: hsl(342, 76%, 15%);
   --bg: url(./assets/bg-purple.svg);
 }
 
@@ -47,10 +53,41 @@ header {
 .card {
   padding: 32px 23px;
   text-align: center;
-
   background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
+}
+
+div.card.group {
+  background: var(--card-color-stage-group);
+}
+
+div.card.ro16 {
+  background: var(--card-color-stage-ro16);
+}
+
+div.card.quater {
+  background: var(--card-color-stage-quarter);
+}
+
+div.card.semi {
+  background: var(--card-color-stage-semi);
+}
+
+div.card.third {
+  background: var(--card-color-stage-third);
+}
+
+div.card.final {
+  background: var(--card-color-stage-final);
+}
+
+div>p {
+  color: var(--card-color-info);
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .card h2 {
@@ -159,22 +196,18 @@ div.gameCardBackground {
 }
 
 img.stadium {
-  -webkit-mask-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 100) 50%,
-    rgba(0, 0, 0, 0) 90%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 10%,
-    rgba(0, 0, 0, 100) 50%,
-    rgba(0, 0, 0, 0) 90%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  -webkit-mask-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 100) 50%,
+      rgba(0, 0, 0, 0) 90%,
+      rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 100) 50%,
+      rgba(0, 0, 0, 0) 90%,
+      rgba(0, 0, 0, 0) 100%);
   position: absolute;
   width: 335px;
   height: 80px;
@@ -211,33 +244,25 @@ div.teamFlag {
 }
 
 .leftFlag {
-  -webkit-mask-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  mask-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  -webkit-mask-image: linear-gradient(to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 1) 100%);
+  mask-image: linear-gradient(to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 1) 100%);
 }
 
 .rightFlag {
-  -webkit-mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.65) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  -webkit-mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 1) 100%);
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 1) 100%);
 }
 
 .firstTeamFlagMask {
@@ -246,11 +271,9 @@ div.teamFlag {
   right: 0%;
   top: 0%;
   bottom: 0%;
-  background: linear-gradient(
-    90deg,
-    var(--card-color-info) 35%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--card-color-info) 35%,
+      rgba(255, 255, 255, 0) 100%);
   filter: blur(1px);
   border-radius: 0px;
 }
@@ -307,6 +330,7 @@ div.matchInfoFrame {
   flex-grow: 1;
   z-index: 2;
 }
+
 div.matchHourFrame {
   display: flex;
   flex-direction: column;
@@ -320,6 +344,7 @@ div.matchHourFrame {
   align-self: stretch;
   flex-grow: 0;
 }
+
 strong.matchHour {
   width: 84px;
   height: 24px;
@@ -337,6 +362,7 @@ strong.matchHour {
   order: 0;
   flex-grow: 0;
 }
+
 div.stadiumFrame {
   display: flex;
   flex-direction: row;
@@ -350,6 +376,7 @@ div.stadiumFrame {
   align-self: stretch;
   flex-grow: 0;
 }
+
 strong.stadiumName {
   width: 111px;
   height: 16px;
@@ -371,7 +398,7 @@ strong.stadiumName {
   flex-grow: 0;
 }
 
-div.teamFlag:hover > strong.teamName {
+div.teamFlag:hover>strong.teamName {
   opacity: 100%;
 }
 
@@ -392,17 +419,13 @@ div.teamFlag:hover > strong.teamName {
 }
 
 .teamNameLeft {
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(45deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%);
 }
 
 .teamNameRight {
-  background: linear-gradient(
-    315deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: linear-gradient(315deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%);
 }
