@@ -20,6 +20,16 @@
   --bg: url(./assets/bg-purple.svg);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#221a25 0%,
+      #4a1f63 100%);
+  padding: 0.75rem;
+  color: var(--card-color-info);
+  margin-top: 32px;
+}
+
 ul {
   list-style: none;
 }
